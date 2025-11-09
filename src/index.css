@@ -173,4 +173,9 @@ body {
   .banner-heading {
     text-align: center;
   }
+
+  .desc-card {
+    width: 250px;
+    height: 520px;
+  }
 }

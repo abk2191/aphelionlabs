@@ -5,7 +5,13 @@ function Description() {
         <div className="desc-card">
           <div className="desc-logo">
             <i class="fa-solid fa-code"></i>
-            <h3 style={{ fontSize: "30px", color: "black" }}>
+            <h3
+              style={{
+                fontSize: "25px",
+                color: "black",
+                fontFamily: "Inter, sans-serif",
+              }}
+            >
               Web Development
             </h3>
           </div>
