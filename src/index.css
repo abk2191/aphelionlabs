@@ -112,6 +112,38 @@ body {
   text-align: center;
 }
 
+.desc-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desc-card {
+  height: 450px;
+  width: 400px;
+  border: 1px solid rgb(191, 191, 191);
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(120, 120, 120, 0.15);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 80px;
+  color: blue;
+  gap: 30px;
+}
+
+.desc-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.desc-p-div {
+  padding: 10px;
+}
 /* .intro-p-div {
   width: 1000px;
 } */
