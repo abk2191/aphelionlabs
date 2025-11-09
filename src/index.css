@@ -83,6 +83,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 6px;
+  margin-bottom: 40px;
+  padding: 15px;
 }
 
 .intro h2 {
@@ -96,8 +98,12 @@ body {
   color: gray;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
+/* .intro-p-div {
+  width: 1000px;
+} */
 @media (max-width: 768px) {
   .nav-list {
     display: none;
