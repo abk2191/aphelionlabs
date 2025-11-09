@@ -73,6 +73,31 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.banner-heading {
+  width: 600px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.intro h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+}
+
+.intro p {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width: 768px) {
   .nav-list {
     display: none;
