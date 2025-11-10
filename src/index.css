@@ -334,4 +334,13 @@ body {
   .mvp h2 {
     font-size: 40px;
   }
+
+  .mvp p {
+    font-size: 30px;
+  }
+
+  .video {
+    width: 350px;
+    height: 200px;
+  }
 }
