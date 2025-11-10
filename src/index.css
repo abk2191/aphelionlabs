@@ -89,7 +89,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 10px;
   text-wrap: wrap;
 }
@@ -229,7 +229,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/galaxy-background.webp");
+  background-image: url("/new-york.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* This creates the parallax effect */
@@ -250,6 +250,33 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+.mvp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mvp h2 {
+  font-size: 60px;
+  font-family: "Inter", sans-serif;
+}
+
+.mvp p {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  padding: 10px;
+  color: grey;
+}
+
+.mvp-prod-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -302,5 +329,9 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+  }
+
+  .mvp h2 {
+    font-size: 40px;
   }
 }

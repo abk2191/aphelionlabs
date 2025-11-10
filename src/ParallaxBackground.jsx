@@ -4,14 +4,14 @@ function ParallaxBackground() {
       <div className="parallax-container">
         <div className="parallax-background">
           <div className="parallax-content">
-            <h1>Your Vision</h1>
+            <h1>We Turn Dreams</h1>
           </div>
         </div>
       </div>{" "}
       <div className="parallax-container">
         <div className="parallax-background2">
           <div className="parallax-content">
-            <h1>Is Our Mission</h1>
+            <h1>Into Reality</h1>
           </div>
         </div>
       </div>

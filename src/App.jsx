@@ -5,6 +5,7 @@ import Intro from "./Intro";
 import Description from "./Description";
 import Sidebar from "./Sidebar";
 import ParallaxBackground from "./ParallaxBackground";
+import MVP from "./MVP";
 
 function App() {
   const [sideBarVisibility, setSideBarVisibility] = useState(false);
@@ -24,6 +25,7 @@ function App() {
       <Intro />
       <Description />
       <ParallaxBackground />
+      <MVP />
     </>
   );
 }
