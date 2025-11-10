@@ -58,7 +58,7 @@ body {
 .banner {
   height: 450px;
   width: 100%;
-  background-image: url("/space-background.jpg");
+  background-image: url("/space-background.webp");
   background-size: cover; /* This makes it fit properly */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling */
@@ -213,7 +213,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/galaxy-planets-digital-art.jpg");
+  background-image: url("/galaxy-planets-digital-art.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* This creates the parallax effect */
@@ -229,7 +229,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/galaxy-background.jpg");
+  background-image: url("/galaxy-background.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* This creates the parallax effect */
