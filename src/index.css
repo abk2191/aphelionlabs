@@ -164,6 +164,14 @@ body {
   padding: 0;
 }
 
+.desc-logo i {
+  background-color: blue;
+  padding: 15px;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
 @media (max-width: 768px) {
   .nav-list {
     display: none;

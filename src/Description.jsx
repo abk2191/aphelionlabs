@@ -33,7 +33,7 @@ function Description() {
         </div>{" "}
         <div className="desc-card">
           <div className="desc-logo">
-            <i class="fa-solid fa-code"></i>
+            <i class="fa-solid fa-pencil"></i>
             <h3
               style={{
                 fontSize: "25px",
@@ -41,7 +41,7 @@ function Description() {
                 fontFamily: "Inter, sans-serif",
               }}
             >
-              Web Development
+              UI Design
             </h3>
           </div>
 
@@ -55,14 +55,13 @@ function Description() {
                 fontFamily: "Inter, sans-serif",
               }}
             >
-              Custom web application development tailored to your business
-              needs.
+              Crafting intuitive and visually appealing user interfaces
             </p>
           </div>
         </div>{" "}
         <div className="desc-card">
           <div className="desc-logo">
-            <i class="fa-solid fa-code"></i>
+            <i class="fa-solid fa-toolbox"></i>
             <h3
               style={{
                 fontSize: "25px",
@@ -70,7 +69,7 @@ function Description() {
                 fontFamily: "Inter, sans-serif",
               }}
             >
-              Web Development
+              Full-Stack Engineering
             </h3>
           </div>
 
@@ -84,8 +83,8 @@ function Description() {
                 fontFamily: "Inter, sans-serif",
               }}
             >
-              Custom web application development tailored to your business
-              needs.
+              Building fast and responsive mobile and web apps both front-end
+              and back-end.
             </p>
           </div>
         </div>
