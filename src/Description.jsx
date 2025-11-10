@@ -26,8 +26,7 @@ function Description() {
                 fontFamily: "Inter, sans-serif",
               }}
             >
-              Custom web application development tailored to your business
-              needs.
+              Custom web application development tailored to your business needs
             </p>
           </div>
         </div>{" "}
@@ -84,7 +83,7 @@ function Description() {
               }}
             >
               Building fast and responsive mobile and web apps both front-end
-              and back-end.
+              and back-end
             </p>
           </div>
         </div>
