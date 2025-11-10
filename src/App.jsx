@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import Intro from "./Intro";
 import Description from "./Description";
 import Sidebar from "./Sidebar";
+import ParallaxBackground from "./ParallaxBackground";
 
 function App() {
   const [sideBarVisibility, setSideBarVisibility] = useState(false);
@@ -22,6 +23,7 @@ function App() {
       <Banner />
       <Intro />
       <Description />
+      <ParallaxBackground />
     </>
   );
 }
