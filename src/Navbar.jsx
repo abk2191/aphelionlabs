@@ -11,7 +11,7 @@ function Navbar({ handleSideBar, isHamMenuClicked }) {
           )}
         </button>
         <div className="logo">
-          <p style={{ color: "white" }}>
+          <p style={{ color: "white", marginBottom: "10px" }}>
             <i class="fa-solid fa-meteor"></i>Aphelion Labs Inc.{" "}
           </p>
         </div>
