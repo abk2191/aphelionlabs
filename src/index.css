@@ -42,6 +42,11 @@ body {
   padding: 20px;
 }
 
+.logo i {
+  font-size: 40px;
+  color: white;
+}
+
 .logo p {
   color: white;
   font-family: "Inter", sans-serif;
@@ -172,6 +177,25 @@ body {
   border-radius: 10px;
 }
 
+.sidebar {
+  height: 100vh;
+  width: 350px;
+  background-color: #152137;
+  z-index: 999; /* Lower than navbar's 1000 */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.ham-menu {
+  z-index: 1001;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+  display: none;
+}
 @media (max-width: 768px) {
   .nav-list {
     display: none;
@@ -206,5 +230,13 @@ body {
 
   .desc-cards-container {
     justify-content: flex-start;
+  }
+
+  .sidebar {
+    width: 300px;
+  }
+
+  .ham-menu {
+    display: block;
   }
 }
