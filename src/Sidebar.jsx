@@ -1,9 +1,11 @@
-function Sidebar() {
+function Sidebar({ isActive }) {
   const sidebarItems = ["Home", "Products", "Services", "Contact"];
 
   return (
     <>
-      <div className="sidebar">
+      <div
+        className={`sidebar ${isActive ? "active-class" : "inactive-class"}`}
+      >
         <div className="sidebar-content">
           {sidebarItems.map((item) => (
             <a key={item} href="#" className="sidebar-link">
