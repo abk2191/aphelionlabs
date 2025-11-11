@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
 import Intro from "./Intro";
@@ -8,41 +8,50 @@ import ParallaxBackground from "./ParallaxBackground";
 import MVP from "./MVP";
 
 function App() {
-  const [sideBarVisibility, setSideBarVisibility] = useState(false);
-  const [isHamMenuClicked, setIsHamMenuClicked] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [shouldRenderSidebar, setShouldRenderSidebar] = useState(false);
+  const sidebarRef = useRef(null);
 
   function handleSideBar() {
-    if (!sideBarVisibility) {
-      // Opening sidebar
+    if (!isSidebarOpen) {
+      // Opening
       setShouldRenderSidebar(true);
-      setSideBarVisibility(true);
-      setIsHamMenuClicked(true);
     } else {
-      // Closing sidebar - start animation first
-      setSideBarVisibility(false);
-      setIsHamMenuClicked(false);
+      // Closing - start animation
+      if (sidebarRef.current) {
+        sidebarRef.current.classList.remove('sidebar--visible');
+      }
+      // Wait for animation to complete before unmounting
+      setTimeout(() => {
+        setShouldRenderSidebar(false);
+      }, 500);
     }
+    setIsSidebarOpen(!isSidebarOpen);
   }
 
-  // Handle sidebar unmount after animation completes
+  // Trigger animation after mount when opening
   useEffect(() => {
-    if (!sideBarVisibility && shouldRenderSidebar) {
-      const timer = setTimeout(() => {
-        setShouldRenderSidebar(false);
-      }, 500); // Match this with your animation duration (0.5s = 500ms)
-
-      return () => clearTimeout(timer);
+    if (shouldRenderSidebar && isSidebarOpen && sidebarRef.current) {
+      // Small delay to ensure DOM is ready
+      setTimeout(() => {
+        if (sidebarRef.current) {
+          sidebarRef.current.classList.add('sidebar--visible');
+        }
+      }, 10);
     }
-  }, [sideBarVisibility, shouldRenderSidebar]);
+  }, [shouldRenderSidebar, isSidebarOpen]);
 
   return (
     <>
       <Navbar
         handleSideBar={handleSideBar}
-        isHamMenuClicked={isHamMenuClicked}
+        isHamMenuClicked={isSidebarOpen}
       />
-      {shouldRenderSidebar && <Sidebar isActive={sideBarVisibility} />}
+      
+      {shouldRenderSidebar && (
+        <Sidebar ref={sidebarRef} />
+      )}
+      
       <Banner />
       <Intro />
       <Description />

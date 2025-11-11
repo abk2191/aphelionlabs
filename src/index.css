@@ -134,11 +134,11 @@ body {
   border: 1px solid white;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(120, 120, 120, 0.15);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 50px;
+  font-size: 30px;
   color: blue;
   gap: 10px;
   background-color: white;
@@ -181,20 +181,16 @@ body {
   height: 100vh;
   width: 350px;
   background-color: #152137;
-  z-index: 999; /* Lower than navbar's 1000 */
+  z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
 }
 
-.active-class {
-  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 0.5s; /* don't forget to set a duration! */
-}
-
-.inactive-class {
-  animation: slideOutLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 0.5s; /* don't forget to set a duration! */
+.sidebar.sidebar--visible {
+  transform: translateX(0);
 }
 
 .ham-menu {
@@ -205,6 +201,72 @@ body {
   font-size: 30px;
   margin-left: 20px;
   display: none;
+}
+
+.parallax-section {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%; /* Extra height for parallax movement */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: transform; /* Optimize performance */
+}
+
+.parallax-1 {
+  background-image: url("/galaxy-planets-digital-art.webp");
+}
+
+.parallax-2 {
+  background-image: url("/new-york.webp");
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.parallax-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove the old parallax styles */
+.parallax-container {
+  /* This will be replaced by .parallax-section */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .parallax-content h1 {
+    font-size: 70px;
+  }
+
+  .parallax-background {
+    height: 100%; /* Less height on mobile */
+  }
+
+  .parallax-section {
+    height: 400px; /* Slightly shorter on mobile */
+  }
 }
 
 .parallax-container {
@@ -242,7 +304,7 @@ body {
   background-image: url("/new-york.webp");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* This creates the parallax effect */
+
   z-index: -1;
 }
 

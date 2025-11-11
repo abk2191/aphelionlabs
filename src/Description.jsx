@@ -4,7 +4,7 @@ function Description() {
       <div className="desc-cards-container">
         <div className="desc-card">
           <div className="desc-logo">
-            <i class="fa-solid fa-code"></i>
+            <i class="fa-solid fa-code" style={{ fontSize: "28px" }}></i>
             <h3
               style={{
                 fontSize: "25px",
@@ -32,7 +32,14 @@ function Description() {
         </div>{" "}
         <div className="desc-card">
           <div className="desc-logo">
-            <i class="fa-solid fa-pencil"></i>
+            <i
+              class="fa-solid fa-pencil"
+              style={{
+                backgroundColor: "green",
+                color: "white",
+                border: "1px solid green",
+              }}
+            ></i>
             <h3
               style={{
                 fontSize: "25px",
@@ -60,7 +67,14 @@ function Description() {
         </div>{" "}
         <div className="desc-card">
           <div className="desc-logo">
-            <i class="fa-solid fa-toolbox"></i>
+            <i
+              class="fa-solid fa-toolbox"
+              style={{
+                backgroundColor: "red",
+                color: "white",
+                border: "1px solid red",
+              }}
+            ></i>
             <h3
               style={{
                 fontSize: "25px",
