@@ -279,6 +279,38 @@ body {
   text-align: center;
 }
 
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 120px 40px;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.sidebar-link {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sidebar-link:hover {
+  color: #4a90e2;
+}
+
+@media (max-width: 768px) {
+  .sidebar-content {
+    padding: 100px 30px;
+    gap: 25px;
+  }
+
+  .sidebar-link {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-list {
     display: none;
