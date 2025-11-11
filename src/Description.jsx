@@ -8,7 +8,7 @@ function Description() {
             <h3
               style={{
                 fontSize: "25px",
-                color: "black",
+                color: "#2c3e50",
                 fontFamily: "Inter, sans-serif",
               }}
             >
@@ -43,7 +43,7 @@ function Description() {
             <h3
               style={{
                 fontSize: "25px",
-                color: "black",
+                color: "#2c3e50",
                 fontFamily: "Inter, sans-serif",
               }}
             >
@@ -78,7 +78,7 @@ function Description() {
             <h3
               style={{
                 fontSize: "25px",
-                color: "black",
+                color: "#2c3e50",
                 fontFamily: "Inter, sans-serif",
               }}
             >

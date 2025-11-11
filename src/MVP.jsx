@@ -10,7 +10,7 @@ function MVP() {
   return (
     <>
       <div className="mvp">
-        <h2>Our MVP Product</h2>
+        <h2 style={{ color: "#2c3e50" }}>Our MVP Product</h2>
         <div className="mvp-prod-desc">
           <p>
             <strong>Slate</strong> - The note app.

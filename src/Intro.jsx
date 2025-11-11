@@ -2,7 +2,7 @@ function Intro() {
   return (
     <>
       <div className="intro">
-        <h2>What We Do</h2>
+        <h2 style={{ color: "#2c3e50" }}>What We Do</h2>
         <div className="intro-p-div">
           <p>
             At Aphelion Labs Inc. we create cutting-edge web experiences that
